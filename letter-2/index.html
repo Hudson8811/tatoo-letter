@@ -1,449 +1,572 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <style>body {
-    background-color: #f7f7f7;
-    margin: 0
-}
 
-.outer {
-    margin: 0 auto;
-    max-width: 600px;
-    width: 100%
-}
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <style>
+      body {
+         background-color: #f7f7f7;
+         margin: 0
+      }
 
-.middle .outer {
-    background-color: #fff;
-    border-radius: 4px
-}
+      .outer {
+         margin: 0 auto;
+         max-width: 600px;
+         width: 100%
+      }
 
-.footer,
-.header,
-.middle {
-    margin: 0 10px;
-    text-align: center;
-    background-color: #f7f7f7;
-    table-layout: fixed;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%
-}
+      .middle .outer {
+         background-color: #fff;
+         border-radius: 4px
+      }
 
-a {
-    color: #07c!important;
-    text-decoration: underline
-}
+      .footer,
+      .header,
+      .middle {
+         margin: 0 10px;
+         text-align: center;
+         background-color: #f7f7f7;
+         table-layout: fixed;
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: 100%
+      }
 
-a span {
-    color: #07c
-}
+      a {
+         color: #07c !important;
+         text-decoration: underline
+      }
 
-a img {
-    border: 0
-}
+      a span {
+         color: #07c
+      }
 
-div,
-p,
-td {
-    -webkit-font-smoothing: subpixel-antialiased
-}
+      a img {
+         border: 0
+      }
 
-table {
-    border-collapse: collapse
-}
+      div,
+      p,
+      td {
+         -webkit-font-smoothing: subpixel-antialiased
+      }
 
-.h1 {
-    font-family: helvetica, arial;
-    font-size: 24px;
-    color: #333;
-    text-align: left;
-    line-height: 30px
-}
+      table {
+         border-collapse: collapse
+      }
 
-.h2 {
-    font-family: helvetica, arial;
-    font-size: 18px;
-    color: #333;
-    text-align: left;
-    line-height: 24px
-}
+      .h1 {
+         font-family: helvetica, arial;
+         font-size: 24px;
+         color: #333;
+         text-align: left;
+         line-height: 30px
+      }
 
-.paragraph,
-p {
-    font-family: helvetica, arial;
-    font-size: 14px;
-    color: #333;
-    text-align: left;
-    line-height: 20px
-}
+      .h2 {
+         font-family: helvetica, arial;
+         font-size: 18px;
+         color: #333;
+         text-align: left;
+         line-height: 24px
+      }
 
-p {
-    Margin: 1em 0
-}
+      .paragraph,
+      p {
+         font-family: helvetica, arial;
+         font-size: 14px;
+         color: #333;
+         text-align: left;
+         line-height: 20px
+      }
 
-.quote {
-    font-style: italic;
-    color: #999
-}
+      p {
+         Margin: 1em 0
+      }
 
-.cover {
-    padding: 0
-}
+      .quote {
+         font-style: italic;
+         color: #999
+      }
 
-.cover img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    display: block;
-    border-radius: 4px 4px 0 0
-}
+      .cover {
+         padding: 0
+      }
 
-.button {
-    width: auto!important;
-    margin: auto
-}
+      .cover img {
+         width: 100%;
+         height: auto;
+         max-width: 600px;
+         display: block;
+         border-radius: 4px 4px 0 0
+      }
 
-.button td {
-    padding: 0
-}
+      .button {
+         width: auto !important;
+         margin: auto
+      }
 
-.button-link {
-    font-family: helvetica;
-    font-size: 14px;
-    color: #fff!important;
-    font-weight: 700;
-    text-decoration: none;
-    background-color: #333;
-    border: #333 10px solid;
-    padding: 0 10px;
-    border-radius: 25px;
-    display: inline-block
-}
+      .button td {
+         padding: 0
+      }
 
-.button-link span {
-    color: #fff
-}
+      .button-link {
+         font-family: helvetica;
+         font-size: 14px;
+         color: #fff !important;
+         font-weight: 700;
+         text-decoration: none;
+         background-color: #333;
+         border: #333 10px solid;
+         padding: 0 10px;
+         border-radius: 25px;
+         display: inline-block
+      }
 
-.four-columns,
-.one-column,
-.three-columns,
-.two-columns {
-    text-align: center;
-    font-size: 0
-}
+      .button-link span {
+         color: #fff
+      }
 
-.four-columns,
-.three-columns,
-.two-columns {
-    padding-left: 10px;
-    padding-right: 10px
-}
+      .four-columns,
+      .one-column,
+      .three-columns,
+      .two-columns {
+         text-align: center;
+         font-size: 0
+      }
 
-.column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
-    text-align: left
-}
+      .four-columns,
+      .three-columns,
+      .two-columns {
+         padding-left: 10px;
+         padding-right: 10px
+      }
 
-.one-column .column {
-    max-width: 600px
-}
+      .column {
+         width: 100%;
+         display: inline-block;
+         vertical-align: top;
+         font-size: 14px;
+         text-align: left
+      }
 
-.two-columns .column {
-    max-width: 290px
-}
+      .one-column .column {
+         max-width: 600px
+      }
 
-.three-columns .column {
-    max-width: 193px
-}
+      .two-columns .column {
+         max-width: 290px
+      }
 
-.four-columns .column {
-    max-width: 290px
-}
+      .three-columns .column {
+         max-width: 193px
+      }
 
-.contacts .h1 {
-    text-align: center
-}
+      .four-columns .column {
+         max-width: 290px
+      }
 
-.contacts .paragraph {
-    text-align: center
-}
+      .contacts .h1 {
+         text-align: center
+      }
 
-.content {
-    padding: 0
-}
+      .contacts .paragraph {
+         text-align: center
+      }
 
-.credits .paragraph {
-    color: #999;
-    font-size: 12px;
-    text-align: center
-}
+      .content {
+         padding: 0
+      }
 
-.header .h1 {
-    text-align: center
-}
+      .credits .paragraph {
+         color: #999;
+         font-size: 12px;
+         text-align: center
+      }
 
-.header .paragraph {
-    text-align: center;
-    font-size: 11px;
-    color: #666
-}
+      .header .h1 {
+         text-align: center
+      }
 
-.logo td {
-    text-align: center
-}
+      .header .paragraph {
+         text-align: center;
+         font-size: 11px;
+         color: #666
+      }
 
-@media only screen and (max-width:400px) {
-    .two-columns .column {
-        max-width: 100%!important
-    }
-    .three-columns .column {
-        max-width: 49.9%!important
-    }
-    .four-columns .column {
-        max-width: 100%!important
-    }
-}
+      .logo td {
+         text-align: center
+      }
 
-@media screen and (min-width:401px) and (max-width:635px) {
-    .two-columns .column {
-        max-width: 50%!important
-    }
-    .three-columns .column {
-        max-width: 33.33%!important
-    }
-    .four-columns .column {
-        max-width: 100%!important
-    }
-}</style>
-   </head>
-   <body style="background-color:#f7f7f7;margin:0;padding-top: 15px; padding-bottom: 15px;">
-      <div class="header" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
-         <!--[if (gte mso 9)|(IE)]>
+      @media only screen and (max-width:400px) {
+         .two-columns .column {
+            max-width: 100% !important
+         }
+
+         .three-columns .column {
+            max-width: 49.9% !important
+         }
+
+         .four-columns .column {
+            max-width: 100% !important
+         }
+      }
+
+      @media screen and (min-width:401px) and (max-width:635px) {
+         .two-columns .column {
+            max-width: 50% !important
+         }
+
+         .three-columns .column {
+            max-width: 33.33% !important
+         }
+
+         .four-columns .column {
+            max-width: 100% !important
+         }
+      }
+   </style>
+</head>
+
+<body style="background-color:#f7f7f7;margin:0;padding-top: 15px; padding-bottom: 15px;">
+   <div class="header"
+      style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
+      <!--[if (gte mso 9)|(IE)]>
          <table width="600" align="center" style="background-color: #fff;">
          <tr>
             <td>
                <![endif]-->
-               <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;margin:0 auto;max-width:600px;width:100%;background-color: #fff;">
-                  <tbody>
+      <table class="outer" cellpadding="0" align="center"
+         style="border-collapse:collapse;margin:0 auto;max-width:600px;width:100%;background-color: #fff;">
+         <tbody>
 
-                     <tr>
-                        <td class="one-column logo" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
-                           <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-                              <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                                 <tbody>
-                                    <tr>
-                                       <td style="-webkit-font-smoothing:subpixel-antialiased;padding:26px 10px 15px;text-align:center;border-bottom:1px solid #e6e6e6;"><a href="#" target="_blank" style="color:#07c!important;text-decoration:underline"><img src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/logo.png" width="149" height="45" style="border:0"></a></td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </td>
-                     </tr>
+            <tr>
+               <td class="one-column logo"
+                  style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
+                  <div class="column"
+                     style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                     <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                        <tbody>
+                           <tr>
+                              <td
+                                 style="-webkit-font-smoothing:subpixel-antialiased;padding:26px 10px 15px;text-align:center;border-bottom:1px solid #e6e6e6;">
+                                 <a href="#" target="_blank" style="color:#07c!important;text-decoration:underline"><img
+                                       src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/logo.png"
+                                       width="149" height="45" style="border:0"></a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </td>
+            </tr>
 
-                  </tbody>
-               </table>
-               <!--[if (gte mso 9)|(IE)]><![endif]-->
-      </div>
-<div class="middle" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
-   <!--[if (gte mso 9)|(IE)]>
+         </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]><![endif]-->
+   </div>
+   <div class="middle"
+      style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
+      <!--[if (gte mso 9)|(IE)]>
    <table width="600" align="center">
    <tr>
       <td>
          <![endif]-->
-         <table class="outer" cellpadding="0" align="center" style="background-color:#fff;border-collapse:collapse;border-radius:4px;margin:0 auto;max-width:600px;width:100%">
-            <tbody>
+      <table class="outer" cellpadding="0" align="center"
+         style="background-color:#fff;border-collapse:collapse;border-radius:4px;margin:0 auto;max-width:600px;width:100%">
+         <tbody>
 
-               <tr>
-                  <td class="one-column" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-                        <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                           <tbody>
+            <tr>
+               <td class="one-column" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
+                  <div class="column"
+                     style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                     <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                        <tbody>
                            <tr>
-                              <td style="-webkit-font-smoothing:subpixel-antialiased;padding:0 30px 0;text-align:center;">
-                                 <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:center;font-size:18px;line-height:20px;margin-top: 22px;margin-bottom: 5px;">Какой-то заголовок</p>
-                                 <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#3b3c41;font-family:helvetica,arial;text-align:center;font-size:14px;line-height:20px;max-width: 480px;margin-left: auto;margin-right: auto;margin-bottom: 35px;">В своём стремлении повысить качество жизни, они забывают, что глубокий уровень погружения требует определения и уточнения переосмысления внешнеэкономических политик. </p>
+                              <td
+                                 style="-webkit-font-smoothing:subpixel-antialiased;padding:0 30px 0;text-align:center;">
+                                 <p
+                                    style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:center;font-size:18px;line-height:20px;margin-top: 22px;margin-bottom: 5px;">
+                                    Какой-то заголовок</p>
+                                 <p
+                                    style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#3b3c41;font-family:helvetica,arial;text-align:center;font-size:14px;line-height:20px;max-width: 480px;margin-left: auto;margin-right: auto;margin-bottom: 35px;">
+                                    В своём стремлении повысить качество жизни, они забывают, что глубокий уровень
+                                    погружения требует определения и уточнения переосмысления внешнеэкономических
+                                    политик. </p>
                               </td>
                            </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </td>
-               </tr>
-               <tr>
-                  <td class="one-column" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center;padding:0 30px 30px;">
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%;border:1px solid #e6e6e6; -webkit-border-radius: 12px;-moz-border-radius: 12px;border-radius: 12px;overflow: hidden;padding-bottom: 35px;">
-                        <table width="100%" cellpadding="0" style="border-collapse:collapse;">
-                           <tbody>
+                        </tbody>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td class="one-column"
+                  style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center;padding:0 30px 30px;">
+                  <div class="column"
+                     style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%;border:1px solid #e6e6e6; -webkit-border-radius: 12px;-moz-border-radius: 12px;border-radius: 12px;overflow: hidden;padding-bottom: 35px;">
+                     <table width="100%" cellpadding="0" style="border-collapse:collapse;">
+                        <tbody>
                            <tr>
-                              <td class="cover" style="-webkit-font-smoothing:subpixel-antialiased;padding:0"><a style="color:#07c!important;text-decoration:underline" href="#" target="_blank"><img width="600" style="border:0;display:block;height:auto;max-width:600px;width:100%" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/img-1.png"></a></td>
+                              <td class="cover" style="-webkit-font-smoothing:subpixel-antialiased;padding:0"><a
+                                    style="color:#07c!important;text-decoration:underline" href="#" target="_blank"><img
+                                       width="600" style="border:0;display:block;height:auto;max-width:600px;width:100%"
+                                       src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/img-1.png"></a>
+                              </td>
                            </tr>
                            <tr>
                               <td style="-webkit-font-smoothing:subpixel-antialiased;padding:0 30px 0;text-align:left;">
-                                 <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:left;font-size:18px;line-height:26px;margin-top: 22px;margin-bottom: 15px;">Хочу сделать тату! Хочу сделать чёрного кота на ноге! сколько будет стоить! и как больно?</p>
+                                 <p
+                                    style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:left;font-size:18px;line-height:26px;margin-top: 22px;margin-bottom: 15px;">
+                                    Хочу сделать тату! Хочу сделать чёрного кота на ноге! сколько будет стоить! и как
+                                    больно?</p>
                                  <table width="100%" cellpadding="0" style="border-collapse:collapse;">
                                     <tbody>
-                                    <tr>
-                                       <td width="50" style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding-right: 10px;">
-                                          <img width="40" height="40" style="border:0" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/people.png">
-                                       </td>
-                                       <td style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;">
-                                          <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:left;font-size:16px;line-height:19px;">Оксана Куропаткина</p>
-                                          <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#979fa2;font-family:helvetica,arial;text-align:left;font-size:14px;line-height:17px;">25 января</p>
-                                       </td>
-                                    </tr>
-                                    </tbody>
-                                 </table>
-                              </td>
-                           </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </td>
-               </tr>
-               <tr>
-                  <td class="one-column" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center;padding:0 30px 30px;">
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%;border:1px solid #e6e6e6; -webkit-border-radius: 12px;-moz-border-radius: 12px;border-radius: 12px;overflow: hidden;padding-bottom: 35px;">
-                        <table width="100%" cellpadding="0" style="border-collapse:collapse;">
-                           <tbody>
-                           <tr>
-                              <td class="cover" style="-webkit-font-smoothing:subpixel-antialiased;padding:0"><a style="color:#07c!important;text-decoration:underline" href="#" target="_blank"><img width="90" style="border:0;display:block;height:auto;max-width:600px;width: auto;margin-left: 30px;margin-top: 30px;" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/img-2.png"></a></td>
-                           </tr>
-                           <tr>
-                              <td style="-webkit-font-smoothing:subpixel-antialiased;padding:0 30px 0;text-align:left;">
-                                 <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:left;font-size:18px;line-height:26px;margin-top: 22px;margin-bottom: 15px;">Помогите выбрать татуировку Хочу написать на латыни известную цитату со смыслом, предложите парочку и более пожалуйста</p>
-                                 <table width="100%" cellpadding="0" style="border-collapse:collapse;">
-                                    <tbody>
-                                    <tr>
-                                       <td width="50" style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding-right: 10px;">
-                                          <img width="40" height="40" style="border:0" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/peolpe2.png">
-                                       </td>
-                                       <td style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;">
-                                          <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:left;font-size:16px;line-height:19px;">Максим Крючков</p>
-                                          <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#979fa2;font-family:helvetica,arial;text-align:left;font-size:14px;line-height:17px;">25 января</p>
-                                       </td>
-                                    </tr>
-                                    </tbody>
-                                 </table>
-                              </td>
-                           </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </td>
-               </tr>
-
-               <tr>
-                  <td class="one-column" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center;padding-top:10px;padding-bottom: 53px;">
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:420px;text-align:left;vertical-align:top;width:100%">
-                        <table width="100%" cellpadding="0" style="border-collapse:collapse;margin:0 auto;">
-                           <tbody>
-                           <tr>
-                              <td style="-webkit-font-smoothing:subpixel-antialiased;padding:0 10px 0;text-align:center;">
-                                 <div style="-webkit-font-smoothing:subpixel-antialiased;text-align:center">
-                                    <table class="button" style="border-collapse:collapse;margin:auto;width:auto!important">
-                                       <tbody>
                                        <tr>
-                                          <td class="button-inner" style="-webkit-font-smoothing:subpixel-antialiased;padding:0">
-                                             <a class="button-link" style="background-color:#241e0c;border:#241e0c 15px solid;border-radius:10px;color:#fff!important;display:inline-block;font-family:helvetica;font-size:19px;font-weight:400;padding:0 50px;text-decoration:none" href="#" target="_blank"><span style="color:#fff">Написать отзыв</span></a>
+                                          <td width="50"
+                                             style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding-right: 10px;">
+                                             <img width="40" height="40" style="border:0"
+                                                src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/people.png">
+                                          </td>
+                                          <td style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;">
+                                             <p
+                                                style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:left;font-size:16px;line-height:19px;">
+                                                Оксана Куропаткина</p>
+                                             <p
+                                                style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#979fa2;font-family:helvetica,arial;text-align:left;font-size:14px;line-height:17px;">
+                                                25 января</p>
                                           </td>
                                        </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td class="one-column"
+                  style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center;padding:0 30px 30px;">
+                  <div class="column"
+                     style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%;border:1px solid #e6e6e6; -webkit-border-radius: 12px;-moz-border-radius: 12px;border-radius: 12px;overflow: hidden;padding-bottom: 35px;">
+                     <table width="100%" cellpadding="0" style="border-collapse:collapse;">
+                        <tbody>
+                           <tr>
+                              <td class="cover" style="-webkit-font-smoothing:subpixel-antialiased;padding:0">
+                                 <a style="font-family: sans-serif; margin-top: 30px;margin-left: 30px; background-color: #555555; display: block;width: 90px; border-radius: 5px; text-decoration: none; text-align: center; color:#ffffff!important; font-size: 20px; height: 34px; box-sizing: border-box; padding-top: 5px;"
+                                    href="#" target="_blank">
+                                    <span
+                                       style="color: #ffffff;font-family: sans-serif; display: inline-block; vertical-align: middle;">2500</span>
+                                    <img width="90"
+                                       style="vertical-align: middle; border:0;display:inline-block;height:auto;max-width:600px;width: auto;margin-left: 0px;margin-top: 0px;"
+                                       src="index_files/rub.jpg">
+                                 </a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="-webkit-font-smoothing:subpixel-antialiased;padding:0 30px 0;text-align:left;">
+                                 <p
+                                    style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:left;font-size:18px;line-height:26px;margin-top: 22px;margin-bottom: 15px;">
+                                    Помогите выбрать татуировку Хочу написать на латыни известную цитату со смыслом,
+                                    предложите парочку и более пожалуйста</p>
+                                 <table width="100%" cellpadding="0" style="border-collapse:collapse;">
+                                    <tbody>
+                                       <tr>
+                                          <td width="50"
+                                             style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding-right: 10px;">
+                                             <img width="40" height="40" style="border:0"
+                                                src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/peolpe2.png">
+                                          </td>
+                                          <td style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;">
+                                             <p
+                                                style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#1a1a1a;font-family:helvetica,arial;text-align:left;font-size:16px;line-height:19px;">
+                                                Максим Крючков</p>
+                                             <p
+                                                style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#979fa2;font-family:helvetica,arial;text-align:left;font-size:14px;line-height:17px;">
+                                                25 января</p>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+
+            <tr>
+               <td class="one-column"
+                  style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center;padding-top:10px;padding-bottom: 53px;">
+                  <div class="column"
+                     style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:420px;text-align:left;vertical-align:top;width:100%">
+                     <table width="100%" cellpadding="0" style="border-collapse:collapse;margin:0 auto;">
+                        <tbody>
+                           <tr>
+                              <td
+                                 style="-webkit-font-smoothing:subpixel-antialiased;padding:0 10px 0;text-align:center;">
+                                 <div style="-webkit-font-smoothing:subpixel-antialiased;text-align:center">
+                                    <table class="button"
+                                       style="border-collapse:collapse;margin:auto;width:auto!important">
+                                       <tbody>
+                                          <tr>
+                                             <td class="button-inner"
+                                                style="-webkit-font-smoothing:subpixel-antialiased;padding:0">
+                                                <a class="button-link"
+                                                   style="background-color:#241e0c;border:#241e0c 15px solid;border-radius:10px;color:#fff!important;display:inline-block;font-family:helvetica;font-size:19px;font-weight:400;padding:0 50px;text-decoration:none"
+                                                   href="#" target="_blank"><span style="color:#fff">Написать
+                                                      отзыв</span></a>
+                                             </td>
+                                          </tr>
                                        </tbody>
                                     </table>
                                  </div>
                               </td>
                            </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </td>
-               </tr>
-               </tbody>
-            </table>
-            <!--[if (gte mso 9)|(IE)]><![endif]-->
-</div>
-<div class="footer" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
-   <!--[if (gte mso 9)|(IE)]>
+                        </tbody>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]><![endif]-->
+   </div>
+   <div class="footer"
+      style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
+      <!--[if (gte mso 9)|(IE)]>
    <table width="600" align="center">
    <tr>
       <td>
          <![endif]-->
-         <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;margin:0 auto;max-width:600px;width:100%">
-            <tbody>
-               <tr>
-                  <td class="one-column contacts" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center;background-color: #fff;border-top:1px solid #e6e6e6">
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-                        <table width="100%" cellpadding="0" style="border-collapse:collapse;">
-                           <tbody>
-                              <tr>
-                                 <td style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 20px;padding-right: 20px;padding-top: 25px;">
-                                    <div align="center" style="-webkit-font-smoothing:subpixel-antialiased">
+      <table class="outer" cellpadding="0" align="center"
+         style="border-collapse:collapse;margin:0 auto;max-width:600px;width:100%">
+         <tbody>
+            <tr>
+               <td class="one-column contacts"
+                  style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center;background-color: #fff;border-top:1px solid #e6e6e6">
+                  <div class="column"
+                     style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                     <table width="100%" cellpadding="0" style="border-collapse:collapse;">
+                        <tbody>
+                           <tr>
+                              <td
+                                 style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 20px;padding-right: 20px;padding-top: 25px;">
+                                 <div align="center" style="-webkit-font-smoothing:subpixel-antialiased">
 
-                                          <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;" href="#" target="_blank"><span style="color:#1a1a1a">Мастера</span></a>
+                                    <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;"
+                                       href="#" target="_blank"><span style="color:#1a1a1a">Мастера</span></a>
 
-                                          <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;" href="#" target="_blank"><span style="color:#1a1a1a">Салоны</span></a>
+                                    <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;"
+                                       href="#" target="_blank"><span style="color:#1a1a1a">Салоны</span></a>
 
-                                          <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;" href="#" target="_blank"><span style="color:#1a1a1a">Работы</span></a>
+                                    <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;"
+                                       href="#" target="_blank"><span style="color:#1a1a1a">Работы</span></a>
 
-                                          <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;" href="#" target="_blank"><span style="color:#1a1a1a">Заказы</span></a>
+                                    <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;"
+                                       href="#" target="_blank"><span style="color:#1a1a1a">Заказы</span></a>
 
-                                          <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;" href="#" target="_blank"><span style="color:#1a1a1a">Значения</span></a>
+                                    <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;"
+                                       href="#" target="_blank"><span style="color:#1a1a1a">Значения</span></a>
 
-                                          <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;" href="#" target="_blank"><span style="color:#1a1a1a">Магазин</span></a>
+                                    <a style="margin-left: 13px;margin-right: 13px;margin-bottom: 10px;display:inline-block;vertical-align: top;color:#07c!important;text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 16px; line-height: 19px;"
+                                       href="#" target="_blank"><span style="color:#1a1a1a">Магазин</span></a>
 
-                                    </div>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 20px;padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
-                                    <div align="center" style="-webkit-font-smoothing:subpixel-antialiased">
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td
+                                 style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 20px;padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
+                                 <div align="center" style="-webkit-font-smoothing:subpixel-antialiased">
 
-                                       <a href="#" target="_blank" style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img width="50" height="50" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/vkontakte.png" style="border:0"></a>
-                                       <a href="#" target="_blank" style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img width="50" height="50" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/facebook.png" style="border:0"></a>
-                                       <a href="#" target="_blank" style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img width="50" height="50" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/twitter.png" style="border:0"></a>
-                                       <a href="#" target="_blank" style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img width="50" height="50" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/inst.png" style="border:0"></a>
-                                       <a href="#" target="_blank" style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img width="50" height="50" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/ok.png" style="border:0"></a>
-                                       <a href="#" target="_blank" style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img width="50" height="50" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/yt.png" style="border:0"></a>
-                                       <a href="#" target="_blank" style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img width="50" height="50" src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/tg.png" style="border:0"></a>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 20px;padding-right: 20px; padding-top: 5px; padding-bottom: 25px;">
-                                    <div align="center" style="-webkit-font-smoothing:subpixel-antialiased">
-                                       <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#979fa2;font-family:helvetica,arial;text-align:center;font-size:14px;line-height:17px;">© RusTattoo 2020</p>
-                                    </div>
-                                 </td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </td>
-               </tr>
-               <tr>
-                  <td class="one-column credits" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-                        <table width="100%" cellpadding="30" style="border-collapse:collapse">
-                           <tbody>
-                              <tr>
-                                 <td style="-webkit-font-smoothing:subpixel-antialiased">
-                                    <div class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#b2b2b2;font-family:helvetica,arial;font-size:14px;line-height:22px;text-align:center;max-width: 490px; margin-left: auto; margin-right: auto;">Вы получили это письмо, потому что подписались на мастера на сайте <a style="text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 14px; line-height: 22px; color: #b2b2b2;border-bottom: 1px solid #b2b2b2;" href="#" target="_blank"><span style="color:#b2b2b2">rustattoo.ru</span></a>. Если вы не хотите более получать электронные рассылки, то нажмите <a style="text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 14px; line-height: 22px; color: #b2b2b2;border-bottom: 1px solid #b2b2b2;white-space: nowrap;" href="#" target="_blank"><span style="color:#b2b2b2">Отказаться от рассылки</span></a></div>
-                                 </td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-         <!--[if (gte mso 9)|(IE)]><![endif]-->
-</div>
+                                    <a href="#" target="_blank"
+                                       style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img
+                                          width="50" height="50"
+                                          src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/vkontakte.png"
+                                          style="border:0"></a>
+                                    <a href="#" target="_blank"
+                                       style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img
+                                          width="50" height="50"
+                                          src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/facebook.png"
+                                          style="border:0"></a>
+                                    <a href="#" target="_blank"
+                                       style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img
+                                          width="50" height="50"
+                                          src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/twitter.png"
+                                          style="border:0"></a>
+                                    <a href="#" target="_blank"
+                                       style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img
+                                          width="50" height="50"
+                                          src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/inst.png"
+                                          style="border:0"></a>
+                                    <a href="#" target="_blank"
+                                       style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img
+                                          width="50" height="50"
+                                          src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/ok.png"
+                                          style="border:0"></a>
+                                    <a href="#" target="_blank"
+                                       style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img
+                                          width="50" height="50"
+                                          src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/yt.png"
+                                          style="border:0"></a>
+                                    <a href="#" target="_blank"
+                                       style="color:#07c!important;text-decoration:underline;margin-left: 12px;margin-right: 12px;"><img
+                                          width="50" height="50"
+                                          src="https://raw.githubusercontent.com/Hudson8811/tatoo-letter/master/letter-2/index_files/tg.png"
+                                          style="border:0"></a>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td
+                                 style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 20px;padding-right: 20px; padding-top: 5px; padding-bottom: 25px;">
+                                 <div align="center" style="-webkit-font-smoothing:subpixel-antialiased">
+                                    <p
+                                       style="-webkit-font-smoothing:subpixel-antialiased;Margin:0;color:#979fa2;font-family:helvetica,arial;text-align:center;font-size:14px;line-height:17px;">
+                                       © RusTattoo 2020</p>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td class="one-column credits"
+                  style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
+                  <div class="column"
+                     style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                     <table width="100%" cellpadding="30" style="border-collapse:collapse">
+                        <tbody>
+                           <tr>
+                              <td style="-webkit-font-smoothing:subpixel-antialiased">
+                                 <div class="paragraph"
+                                    style="-webkit-font-smoothing:subpixel-antialiased;color:#b2b2b2;font-family:helvetica,arial;font-size:14px;line-height:22px;text-align:center;max-width: 490px; margin-left: auto; margin-right: auto;">
+                                    Вы получили это письмо, потому что подписались на мастера на сайте <a
+                                       style="text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 14px; line-height: 22px; color: #b2b2b2;border-bottom: 1px solid #b2b2b2;"
+                                       href="#" target="_blank"><span style="color:#b2b2b2">rustattoo.ru</span></a>.
+                                    Если вы не хотите более получать электронные рассылки, то нажмите <a
+                                       style="text-decoration:none;font-family:helvetica,arial;webkit-font-smoothing:subpixel-antialiased;font-size: 14px; line-height: 22px; color: #b2b2b2;border-bottom: 1px solid #b2b2b2;white-space: nowrap;"
+                                       href="#" target="_blank"><span style="color:#b2b2b2">Отказаться от
+                                          рассылки</span></a></div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]><![endif]-->
+   </div>
 </body>
 
 </html>
